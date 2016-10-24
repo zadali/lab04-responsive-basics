@@ -34,7 +34,7 @@ section {
 @media screen and (min-width: 580px) {
   /* styles for above mobile sizes */
 
-  /* place any hover states here - should not be in mobile size */
+  /* place any hover states here - no hover for mobile! */
   header {
     background: #444;
     color: #ccc;
@@ -48,6 +48,7 @@ section {
   section {
     width: 44%;
     margin: 2%;
+    padding: 0 4px .5em;
     display: inline-block;
     min-height: 300px;
     background: #444;
