@@ -1,37 +1,109 @@
-/* GLOBAL STYLES */
+/* GLOBAL AND MOBILE STYLES FIRST */
 
 body {
   margin:0;
   padding:0;
   background: #222;
+  color: #fff;
+  text-align: center;
 }
 header {
   background: #ccc;
   color: #444;
-  text-align: center;
+}
+nav {
+  background: #aaa;
+  display: none;
+}
+nav a {
+  padding: 1em;
+  display: block;
+}
+#menu {
+  padding: 1em;
+  background: #fff;
+  display: block;
+}
+.show-menu {
+  display: block;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin: 0;
   padding: 1em;
 }
-h2 {
-  font-size: 1.5em;
-}
 main {
-  max-width: 1000px;
-  margin: 0 auto;
   background: #eee;
-  text-align: center;
-  padding: 2px;
+  padding: .5em;
 }
 section {
-  font-size: 1em;
   background: #888;
-  width: 22%;
-  margin: 1em 1% 1em 1%;
-  display: inline-block;
 }
-section:hover {
-  background: #666;
+
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+  header {
+    background: #444;
+    color: #ccc;
+  }
+  nav a {
+    width: 44%;
+    display: inline-block;
+  }
+  nav a:hover {
+    background: #777;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section {
+    width: 44%;
+    margin: 2%;
+    display: inline-block;
+    background: #444;
+    color: #999;
+  }
+  section:hover {
+    background: #666;
+  }
 }
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+  header {
+    background: #222;
+    color: #ccc;
+  }
+  nav {
+    display: block;
+  }
+  nav a {
+    line-height: 3em;
+    width: inherit;
+  }
+  #menu {
+    display: none;
+  }
+  main {
+    max-width: 1000px;
+  }
+  section {
+    width: 22%;
+    margin: 1em 1% 1em 1%;
+    background: #222;
+    border-color: #666;
+    font-size: 1.5em;
+  }
+}
+/* END SECOND BREAKPOINT */

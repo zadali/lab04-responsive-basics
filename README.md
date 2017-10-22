@@ -7,4 +7,4 @@ Read the more detailed instructions on Blackboard.
 
 ![](imgs/mobile.png)
 ![](imgs/tablet.png)
-![](imgs/desktop.png)
+<!-- ![](imgs/desktop.png) -->
