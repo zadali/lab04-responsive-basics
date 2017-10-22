@@ -7,7 +7,7 @@
 
   let toggle = false; // hidden at first
   function toggleMenu(){
-    if toggle { // true: it's visible
+    if (toggle) { // true: it's visible
       navMenu.classList.remove("show-menu"), // hide it
       toggle = false
     }
